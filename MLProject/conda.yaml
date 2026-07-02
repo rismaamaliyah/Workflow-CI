@@ -1,0 +1,9 @@
+name: adult_income_env
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - scikit-learn
+  - pandas
+  - numpy
+  - mlflow
