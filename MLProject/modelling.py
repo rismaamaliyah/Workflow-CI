@@ -12,11 +12,10 @@ train_df = pd.read_csv("adult_income_dataset_preprocessing.csv")
 X_train = train_df.drop(columns=["income"])
 y_train = train_df["income"]
 
-with mlflow.start_run():
-    model = LogisticRegression(max_iter=args.max_iter)
-    model.fit(X_train, y_train)
-    acc = accuracy_score(y_train, model.predict(X_train))
-    mlflow.log_param("max_iter", args.max_iter)
-    mlflow.log_metric("accuracy", acc)
-    mlflow.sklearn.log_model(model, "model")
-    print(f"Training accuracy: {acc}")
+model = LogisticRegression(max_iter=args.max_iter)
+model.fit(X_train, y_train)
+acc = accuracy_score(y_train, model.predict(X_train))
+mlflow.log_param("max_iter", args.max_iter)
+mlflow.log_metric("accuracy", acc)
+mlflow.sklearn.log_model(model, "model")
+print(f"Training accuracy: {acc}")
