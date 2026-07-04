@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/document/Courses/Membangun%20Sistem%20Machine%20Learning/Workflow-CI/mlruns/0/4362e0e75c274bbda23869f6309c6734/artifacts
+end_time: 1783128123634
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4362e0e75c274bbda23869f6309c6734
+run_name: painted-lark-533
+run_uuid: 4362e0e75c274bbda23869f6309c6734
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783128095355
+status: 3
+tags: []
+user_id: VivoBook

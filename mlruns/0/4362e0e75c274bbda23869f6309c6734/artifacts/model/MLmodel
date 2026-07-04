@@ -1,0 +1,111 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.1.post1
+mlflow_version: 2.18.0
+model_size_bytes: 4168
+model_uuid: c2c2525b5eb14c099368c0aa4c488b4b
+run_id: 4362e0e75c274bbda23869f6309c6734
+signature:
+  inputs: '[{"type": "double", "name": "age", "required": true}, {"type": "double",
+    "name": "education_num", "required": true}, {"type": "double", "name": "capital_gain",
+    "required": true}, {"type": "double", "name": "capital_loss", "required": true},
+    {"type": "double", "name": "hours_per_week", "required": true}, {"type": "double",
+    "name": "workclass_Federal-gov", "required": true}, {"type": "double", "name":
+    "workclass_Local-gov", "required": true}, {"type": "double", "name": "workclass_Never-worked",
+    "required": true}, {"type": "double", "name": "workclass_Private", "required":
+    true}, {"type": "double", "name": "workclass_Self-emp-inc", "required": true},
+    {"type": "double", "name": "workclass_Self-emp-not-inc", "required": true}, {"type":
+    "double", "name": "workclass_State-gov", "required": true}, {"type": "double",
+    "name": "workclass_Without-pay", "required": true}, {"type": "double", "name":
+    "education_10th", "required": true}, {"type": "double", "name": "education_11th",
+    "required": true}, {"type": "double", "name": "education_12th", "required": true},
+    {"type": "double", "name": "education_1st-4th", "required": true}, {"type": "double",
+    "name": "education_5th-6th", "required": true}, {"type": "double", "name": "education_7th-8th",
+    "required": true}, {"type": "double", "name": "education_9th", "required": true},
+    {"type": "double", "name": "education_Assoc-acdm", "required": true}, {"type":
+    "double", "name": "education_Assoc-voc", "required": true}, {"type": "double",
+    "name": "education_Bachelors", "required": true}, {"type": "double", "name": "education_Doctorate",
+    "required": true}, {"type": "double", "name": "education_HS-grad", "required":
+    true}, {"type": "double", "name": "education_Masters", "required": true}, {"type":
+    "double", "name": "education_Preschool", "required": true}, {"type": "double",
+    "name": "education_Prof-school", "required": true}, {"type": "double", "name":
+    "education_Some-college", "required": true}, {"type": "double", "name": "marital_status_Divorced",
+    "required": true}, {"type": "double", "name": "marital_status_Married-AF-spouse",
+    "required": true}, {"type": "double", "name": "marital_status_Married-civ-spouse",
+    "required": true}, {"type": "double", "name": "marital_status_Married-spouse-absent",
+    "required": true}, {"type": "double", "name": "marital_status_Never-married",
+    "required": true}, {"type": "double", "name": "marital_status_Separated", "required":
+    true}, {"type": "double", "name": "marital_status_Widowed", "required": true},
+    {"type": "double", "name": "occupation_Adm-clerical", "required": true}, {"type":
+    "double", "name": "occupation_Armed-Forces", "required": true}, {"type": "double",
+    "name": "occupation_Craft-repair", "required": true}, {"type": "double", "name":
+    "occupation_Exec-managerial", "required": true}, {"type": "double", "name": "occupation_Farming-fishing",
+    "required": true}, {"type": "double", "name": "occupation_Handlers-cleaners",
+    "required": true}, {"type": "double", "name": "occupation_Machine-op-inspct",
+    "required": true}, {"type": "double", "name": "occupation_Other-service", "required":
+    true}, {"type": "double", "name": "occupation_Priv-house-serv", "required": true},
+    {"type": "double", "name": "occupation_Prof-specialty", "required": true}, {"type":
+    "double", "name": "occupation_Protective-serv", "required": true}, {"type": "double",
+    "name": "occupation_Sales", "required": true}, {"type": "double", "name": "occupation_Tech-support",
+    "required": true}, {"type": "double", "name": "occupation_Transport-moving", "required":
+    true}, {"type": "double", "name": "relationship_Husband", "required": true}, {"type":
+    "double", "name": "relationship_Not-in-family", "required": true}, {"type": "double",
+    "name": "relationship_Other-relative", "required": true}, {"type": "double", "name":
+    "relationship_Own-child", "required": true}, {"type": "double", "name": "relationship_Unmarried",
+    "required": true}, {"type": "double", "name": "relationship_Wife", "required":
+    true}, {"type": "double", "name": "race_Amer-Indian-Eskimo", "required": true},
+    {"type": "double", "name": "race_Asian-Pac-Islander", "required": true}, {"type":
+    "double", "name": "race_Black", "required": true}, {"type": "double", "name":
+    "race_Other", "required": true}, {"type": "double", "name": "race_White", "required":
+    true}, {"type": "double", "name": "sex_Female", "required": true}, {"type": "double",
+    "name": "sex_Male", "required": true}, {"type": "double", "name": "native_country_Cambodia",
+    "required": true}, {"type": "double", "name": "native_country_Canada", "required":
+    true}, {"type": "double", "name": "native_country_China", "required": true}, {"type":
+    "double", "name": "native_country_Columbia", "required": true}, {"type": "double",
+    "name": "native_country_Cuba", "required": true}, {"type": "double", "name": "native_country_Dominican-Republic",
+    "required": true}, {"type": "double", "name": "native_country_Ecuador", "required":
+    true}, {"type": "double", "name": "native_country_El-Salvador", "required": true},
+    {"type": "double", "name": "native_country_England", "required": true}, {"type":
+    "double", "name": "native_country_France", "required": true}, {"type": "double",
+    "name": "native_country_Germany", "required": true}, {"type": "double", "name":
+    "native_country_Greece", "required": true}, {"type": "double", "name": "native_country_Guatemala",
+    "required": true}, {"type": "double", "name": "native_country_Haiti", "required":
+    true}, {"type": "double", "name": "native_country_Holand-Netherlands", "required":
+    true}, {"type": "double", "name": "native_country_Honduras", "required": true},
+    {"type": "double", "name": "native_country_Hong", "required": true}, {"type":
+    "double", "name": "native_country_Hungary", "required": true}, {"type": "double",
+    "name": "native_country_India", "required": true}, {"type": "double", "name":
+    "native_country_Iran", "required": true}, {"type": "double", "name": "native_country_Ireland",
+    "required": true}, {"type": "double", "name": "native_country_Italy", "required":
+    true}, {"type": "double", "name": "native_country_Jamaica", "required": true},
+    {"type": "double", "name": "native_country_Japan", "required": true}, {"type":
+    "double", "name": "native_country_Laos", "required": true}, {"type": "double",
+    "name": "native_country_Mexico", "required": true}, {"type": "double", "name":
+    "native_country_Nicaragua", "required": true}, {"type": "double", "name": "native_country_Outlying-US(Guam-USVI-etc)",
+    "required": true}, {"type": "double", "name": "native_country_Peru", "required":
+    true}, {"type": "double", "name": "native_country_Philippines", "required": true},
+    {"type": "double", "name": "native_country_Poland", "required": true}, {"type":
+    "double", "name": "native_country_Portugal", "required": true}, {"type": "double",
+    "name": "native_country_Puerto-Rico", "required": true}, {"type": "double", "name":
+    "native_country_Scotland", "required": true}, {"type": "double", "name": "native_country_South",
+    "required": true}, {"type": "double", "name": "native_country_Taiwan", "required":
+    true}, {"type": "double", "name": "native_country_Thailand", "required": true},
+    {"type": "double", "name": "native_country_Trinadad&Tobago", "required": true},
+    {"type": "double", "name": "native_country_United-States", "required": true},
+    {"type": "double", "name": "native_country_Vietnam", "required": true}, {"type":
+    "double", "name": "native_country_Yugoslavia", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2026-07-04 01:21:47.011297'
