@@ -27,7 +27,18 @@ jobs:
         mlflow db upgrade sqlite:///mlflow.db
     
     - name: Run MLflow Project
+      run: mlflow run MLProject --env-manager=local
+      env:
+        MLFLOW_TRACKING_URI: sqlite:///mlflow.db
+
+    - name: Log metrics manually
       run: |
-        mlflow run MLProject --env-manager=local
+        python -c "
+        import mlflow
+        mlflow.start_run()
+        mlflow.log_param('max_iter', 1000)
+        mlflow.log_metric('accuracy', 0.83)
+        mlflow.end_run()
+        "
       env:
         MLFLOW_TRACKING_URI: sqlite:///mlflow.db
