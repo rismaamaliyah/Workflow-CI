@@ -21,7 +21,13 @@ jobs:
     - name: Install dependencies
       run: |
         pip install mlflow scikit-learn pandas numpy
+
+    - name: Setup MLflow DB
+      run: |
+        mlflow migrate-filestore --src ./mlruns --dst sqlite:///mlflow.db
     
     - name: Run MLflow Project
       run: |
-        mlflow run MLProject
+        mlflow run MLProject --env-manager=local
+      env:
+        MLFLOW_TRACKING_URI: sqlite:///mlflow.db
