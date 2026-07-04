@@ -24,7 +24,7 @@ jobs:
 
     - name: Setup MLflow DB
       run: |
-        mlflow migrate-filestore --src ./mlruns --dst sqlite:///mlflow.db
+        mlflow migrate-filestore --source ./mlruns --destination sqlite:///mlflow.db
     
     - name: Run MLflow Project
       run: |
