@@ -42,3 +42,9 @@ jobs:
         "
       env:
         MLFLOW_TRACKING_URI: sqlite:///mlflow.db
+
+    - name: Upload MLflow DB
+        uses: actions/upload-artifact@v3
+        with:
+          name: mlflow-db
+          path: mlflow.db
