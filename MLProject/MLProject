@@ -6,4 +6,4 @@ entry_points:
   main:
     parameters:
       max_iter: {type: int, default: 200}
-    command: "python MLProject/modelling.py --max_iter {max_iter}"
+    command: "python modelling.py --max_iter {max_iter}"
